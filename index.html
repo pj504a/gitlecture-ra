@@ -55,63 +55,100 @@
 				<section>
                     <section>
                         <h2>Wprowadzenie</h2>
+                        <aside class="notes">
+                            Mamy narzędzie - jaki problem rozwiązuje?
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/text_v1.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Załóżmy, że mamy jakiś plik.<br>
+                            ** praca inżynierska<br>
+                            ** kod źródłowy<br>
+                            ** obrazki<br>
+                            * Jest dobry, ale chcemy go zmodyfikować
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/text_v2.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Wprowadzamy zmiany<br>
+                            * Okazuje się, że poprzednia wersja była lepsza<br>
+                            * Co teraz?<br>
+                            * wnioski
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/copy_file.png" alt="Down arrow">
+                        <aside class="notes">
+                            * kopiowanie przed modyfikacją<br>
+                            * Można wrócić
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/copy_file_old.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Dla lubiących porządek<br>
+                            * Nowy katalog
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/copy_file_new_dir.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Po pewnym czasie repo się rozrasta<br>
+                            * Znajdź tu konkretną wersję!<br>
+                            * Po miesiącu<br>
+                            * Jak sobie z tym poradzić?
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/copy_file_changelog.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Możemy dodać changelog<br>
+                            * Jeśli szukamy czegoś konkretnego tam szukamy<br>
+                            * A jeśli nie znaleźliśmy, ale wiemy co tam było?<br>
+                            * Search<br>
+                            * Zaczyna się to komplikować
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/copy_file_multi.png" alt="Down arrow">
+                        <aside class="notes">
+                            * Jak sobie poradzić z wieloma plikami?<br>
+                            * Możemy utworzyć podkatalog dla każdego pliku.<br>
+                            * Ale jest to bardzo uciążliwe<br>
+                            * Stwierdzono, że trzeba do tego oprogramowanie<br>
+                            * Automatyzacja przedstawionego to lata 70<br>
+                            * Następny problem - praca w zespole<br>
+                        </aside>
                     </section>
                     <section>
-						<img width="60%" data-src="img/cc.png" alt="Down arrow">
+						<img width="60%" data-src="img/cc.png" style="box-shadow:none;border:none;" alt="Down arrow">
+                        <aside class="notes">
+                            * Scentralizowany CVS<br>
+                            * Możliwość wymiany kodu<br>
+                            * Długi czas wyszukiwania<br>
+                            * Dużo zapytań klient-server
+                        </aside>
                     </section>
                     <section>
-						<img width="60%" data-src="img/git.png" alt="Down arrow">
+						<img width="60%" data-src="img/git.png" style="box-shadow:none;border:none;" alt="Down arrow">
+                        <aside class="notes">
+                            * Rozproszone CVS<br>
+                            * Jak działają<br>
+                            * git<br>
+                            * Szybkość działania<br>
+                            * Prostota designu<br>
+                            * Lekkie branche<br>
+                            * Duże projekty<br>
+                            * Całkowicie dystrybucyjny<br>
+                        </aside>
                     </section>
                     <section>
 						<img data-src="img/git_console.png" alt="Down arrow">
                     </section>
                     <section>
 						<img data-src="img/git_gui.png" alt="Down arrow">
-                    </section>
-                    <section>
-                        A co jeśli mamy więcej plików?
-                        Wprowadzono lokalne systemy kontroli wersji.
-                    </section>
-                    <section>
-                        A co jeśli chcemy pracować na tych plikach w grupie?
-                        Zcentralizowane systemy kontroli wersji
-                    </section>
-                    <section>
-                        Tutaj się zatrzymamy, bo tak wygląda git
-                        Z uwagi na niską wydajność sieci wprowadzono
-                        Rozproszone systemy kontroli wersji
-                    </section>
-                    <section>
-                        Założenia git-a:
-                        Speed
-                        Simple design
-                        Strong support for non-linear development (thousands of parallel branches)
-                        Fully distributed
-                        Able to handle large projects like the Linux kernel efficiently (speed and data size)
-                    </section>
-                    <section>
-                        
                     </section>
                 </section>
 				<section>
@@ -120,7 +157,7 @@
                         <h4>Tworzymy repozytorium</h4>
                     </section>
                     <section>
-                        Inicjalizacja repozytorium lokalnie
+                        Inicjalizacja lokalnego repozytorium
                         <aside class="notes">
                             Tell that we created .git directory for this.
                         </aside>
@@ -132,34 +169,34 @@
 				<section>
                     <section>
                         <h2>stage</h2>
-                        <h4>Tworzymy repozytorium</h4>
+                        <h4>Modelujemy zmiany</h4>
                     </section>
                     <section>
-                        Trzy stany
+						<img data-src="img/stage.png" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>commit</h2>
-                        <h4>Tworzymy repozytorium</h4>
+                        <h4>Wrzucamy zmiany do repozytorium</h4>
                     </section>
                     <section>
-						<img data-src="img/commit.png" width="30%" style="box-shadow:none;border:none;" alt="Down arrow">
+						<img data-src="img/commit.png" width="25%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>Branch</h2>
-                        <h4>Wprowadzamy wiele zmian jednocześnie</h4>
+                        <h4>Praca nad wieloma zadaniami</h4>
                     </section>
                     <section>
-                        Co jeśli chcemy korzystać z dobrodziejstw git'a, a zarazem mieć ciągle działający produkt?
+						<img data-src="img/branch.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                     <section>
-                        Co jeśli chcemy pracować nad wieloma zmianami jednocześnie?
-                        Załóżmy, że 
+						<img data-src="img/branch_commit.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                     <section>
+						<img data-src="img/branch_commit_commit.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
@@ -168,6 +205,7 @@
                         <h4>Łączymy zmiany</h4>
                     </section>
                     <section>
+						<img data-src="img/branch_merge.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
@@ -176,47 +214,64 @@
                         <h4>Przeglądamy historie</h4>
                     </section>
                     <section>
+                        git log master..pb_pjarnot_fix<br/>
+						<img data-src="img/log_ddot_2.png" width="40%" style="box-shadow:none;border:none;" class="fragment fade-up" alt="Down arrow">
+                    </section>
+                    <section>
+                        git log master...pb_pjarnot_fix<br/>
+						<img data-src="img/log_tdot_2.png" width="40%" style="box-shadow:none;border:none;" class="fragment fade-up" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>diff</h2>
-                        <h4>Przeglądamy historie</h4>
+                        <h4>Porównujemy pliki</h4>
                     </section>
                     <section>
+                        git diff master..pb_pjarnot_fix<br/>
+						<img data-src="img/log_tdot_2.png" width="40%" style="box-shadow:none;border:none;" class="fragment fade-up" alt="Down arrow">
+                    </section>
+                    <section>
+                        git diff master...pb_pjarnot_fix<br/>
+						<img data-src="img/log_ddot_2.png" width="40%" style="box-shadow:none;border:none;" class="fragment fade-up" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>checkout</h2>
-                        <h4>Przeglądamy historie</h4>
+                        <h4>Skaczemy po historii</h4>
                     </section>
                     <section>
+						<img data-src="img/branch_commit_commit.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>reset</h2>
-                        <h4>Przeglądamy historie</h4>
+                        <h4>Cofamy zmiany</h4>
                     </section>
                     <section>
+						<img data-src="img/branch_commit_commit.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/reset.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>revert</h2>
-                        <h4>Przeglądamy historie</h4>
+                        <h4>Cofamy zmiany cd.</h4>
                     </section>
                     <section>
+						<img data-src="img/branch_commit_commit.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/revert.png" width="40%" style="box-shadow:none;border:none;" alt="Down arrow">
                     </section>
                 </section>
 				<section>
                     <section>
                         <h2>git internals</h2>
-                        <h4>Przeglądamy historie</h4>
-                    </section>
-                    <section>
-                        Tutaj zaczynamy od razu pokazywać
                     </section>
                 </section>
 				<section>
@@ -230,9 +285,6 @@
                             <li class="fragment fade-up">GIT Internals</li>
                             <li class="fragment fade-up">Podsumowanie</li>
                         </ul>
-                    </section>
-                    <section>
-                        Tutaj zaczynamy od razu pokazywać
                     </section>
                 </section>
 			</div>

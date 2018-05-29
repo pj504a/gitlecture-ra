@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,217 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+                <section>
+                    <h1>GIT</h1>
+                    <h2>rozproszony system kontroli wersji</h2>
+                    <h4>Patryk Jarnot</h4>
+                </section>
+                <section>
+                    <h2>Plan prezentacji</h2>
+					<ul>
+                        <!--<li class="fragment fade-up">Wprowadzenie</li>-->
+                        <!--<li class="fragment fade-up">Podstawy</li>-->
+                        <!--<li class="fragment fade-up">Branch</li>-->
+                        <!--<li class="fragment fade-up">Historia repozytorium</li>-->
+                        <!--<li class="fragment fade-up">GIT Internals</li>-->
+                        <!--<li class="fragment fade-up">Podsumowanie</li>-->
+
+                        <!--<li class="fragment fade-up">Init - tworzymy repozytorium</li>-->
+                        <!--<li class="fragment fade-up">Commit - wrzucamy zmiany do bazy</li>-->
+                        <!--<li class="fragment fade-up">Stage - modelujemy zmiany</li>-->
+                        <!--<li class="fragment fade-up">Branch - Wprowadzamy wiele zmian jednocześnie</li>-->
+                        <!--<li class="fragment fade-up">Merge - Łączymy zmiany</li>-->
+                        <!--<li class="fragment fade-up">Log - szukamy w historii</li>-->
+                        <!--<li class="fragment fade-up">Diff - jakie zmiany wprowadziliśmy?</li>-->
+                        <!--<li class="fragment fade-up">Checkout - skaczemy po historii/branch-ach</li>-->
+                        <!--<li class="fragment fade-up">Reset - cofamy commit</li>-->
+                        <!--<li class="fragment fade-up">Revert - cofamy opublikowane zmiany</li>-->
+                        <!--<li class="fragment fade-up">Git internals - jak git jest zbudowany?</li>-->
+					</ul>
+                </section>
+				<section>
+                    <section>
+                        <h2>Wprowadzenie</h2>
+                    </section>
+                    <section>
+						<img data-src="img/text_v1.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/text_v2.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/copy_file.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/copy_file_old.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/copy_file_new_dir.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/copy_file_changelog.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/copy_file_multi.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img width="60%" data-src="img/cc.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img width="60%" data-src="img/git.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/git_console.png" alt="Down arrow">
+                    </section>
+                    <section>
+						<img data-src="img/git_gui.png" alt="Down arrow">
+                    </section>
+                    <section>
+                        A co jeśli mamy więcej plików?
+                        Wprowadzono lokalne systemy kontroli wersji.
+                    </section>
+                    <section>
+                        A co jeśli chcemy pracować na tych plikach w grupie?
+                        Zcentralizowane systemy kontroli wersji
+                    </section>
+                    <section>
+                        Tutaj się zatrzymamy, bo tak wygląda git
+                        Z uwagi na niską wydajność sieci wprowadzono
+                        Rozproszone systemy kontroli wersji
+                    </section>
+                    <section>
+                        Założenia git-a:
+                        Speed
+                        Simple design
+                        Strong support for non-linear development (thousands of parallel branches)
+                        Fully distributed
+                        Able to handle large projects like the Linux kernel efficiently (speed and data size)
+                    </section>
+                    <section>
+                        
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>init</h2>
+                        <h4>Tworzymy repozytorium</h4>
+                    </section>
+                    <section>
+                        Inicjalizacja repozytorium lokalnie
+                        <aside class="notes">
+                            Tell that we created .git directory for this.
+                        </aside>
+                    </section>
+                    <section>
+                        Pobieranie repozytorium
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>stage</h2>
+                        <h4>Tworzymy repozytorium</h4>
+                    </section>
+                    <section>
+                        Trzy stany
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>commit</h2>
+                        <h4>Tworzymy repozytorium</h4>
+                    </section>
+                    <section>
+						<img data-src="img/commit.png" width="30%" style="box-shadow:none;border:none;" alt="Down arrow">
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>Branch</h2>
+                        <h4>Wprowadzamy wiele zmian jednocześnie</h4>
+                    </section>
+                    <section>
+                        Co jeśli chcemy korzystać z dobrodziejstw git'a, a zarazem mieć ciągle działający produkt?
+                    </section>
+                    <section>
+                        Co jeśli chcemy pracować nad wieloma zmianami jednocześnie?
+                        Załóżmy, że 
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>merge</h2>
+                        <h4>Łączymy zmiany</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>log</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>diff</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>checkout</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>reset</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>revert</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>git internals</h2>
+                        <h4>Przeglądamy historie</h4>
+                    </section>
+                    <section>
+                        Tutaj zaczynamy od razu pokazywać
+                    </section>
+                </section>
+				<section>
+                    <section>
+                        <h2>Podsumowanie</h2>
+                        <ul>
+                            <li class="fragment fade-up">Wprowadzenie</li>
+                            <li class="fragment fade-up">Podstawy</li>
+                            <li class="fragment fade-up">Branch</li>
+                            <li class="fragment fade-up">Historia repozytorium</li>
+                            <li class="fragment fade-up">GIT Internals</li>
+                            <li class="fragment fade-up">Podsumowanie</li>
+                        </ul>
+                    </section>
+                    <section>
+                        Tutaj zaczynamy od razu pokazywać
+                    </section>
+                </section>
 			</div>
 		</div>
 
